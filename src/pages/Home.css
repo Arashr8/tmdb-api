@@ -1,0 +1,20 @@
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movies-container > div {
+  width: 25%;
+}
+
+.movies-container > div img {
+  width: 90%;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all ease 0.2s;
+}
+
+.movies-container > div img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.7);
+}
