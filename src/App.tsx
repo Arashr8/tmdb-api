@@ -5,14 +5,20 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>TMDB</h1>
       <nav>
+        <a className="brand" href="/">
+          Arash Movie DB
+        </a>
         <ul>
-          <li>Home</li>
-          <li>Details</li>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="/about">Details</a>
+          </li>
         </ul>
       </nav>
-      <div>
+      <div className="page-container">
         <Outlet />
       </div>
     </div>

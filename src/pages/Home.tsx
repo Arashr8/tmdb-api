@@ -42,7 +42,9 @@ const Home = () => {
                 src={`https://image.tmdb.org/t/p/w154${movie.poster_path}`}
               />
             </div>
-            <div>{movie.title}</div>
+            <h3>
+              {movie.title} ({movie.release_date.split("-")?.[0]})
+            </h3>
           </div>
         ))}
       </div>
